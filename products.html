@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+</head>
+
+<style>
+
+    body {
+        margin: 0;
+    }
+
+    #innpakning {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 2700px;
+        background-color: #f1f1f1;
+    }
+
+    #main {
+        position: absolute;
+        width: 100%;
+        height: 2400px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 130px;
+        background-color: white;
+        box-shadow: 0px 3px 18px rgba(140, 135, 135, 0.7);
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #innpakningMeny {
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        width: 100%;
+        height: 70px;
+        background-color: white;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0px 3px 20px rgba(140, 135, 135, 0.7);
+        z-index: 3;
+    }
+
+    #hovedlogo {
+        font-family: "Baloo Bhaina";
+        color: #2BA337;
+        font-size: 43px;
+        letter-spacing: 2px;
+        margin-left: 30px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    #innpakningSider {
+        display: flex;
+        flex-direction: row;
+        width: 450px;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 200px;
+    }
+
+    .menysider {
+        color: #565656;
+        font-family: "Arial Narrow";
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+
+    .menysider:hover {
+        color: #2BA337;
+    }
+
+    #products {
+        color: #2BA337;
+    }
+
+    #knappKontakt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 35px;
+        position: absolute;
+        border: solid #2BA337 3px;
+        border-radius: 10px;
+        background-color: white;
+        right: 40px;
+        color: #2BA337;
+        font-family: "Arial Narrow";
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+
+    #knappKontakt:hover {
+        border-width: 5px;
+    }
+
+    .innpakningProdukt {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        height: 1150px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .overskrift {
+        font-weight: bold;
+        font-family: "Arial Narrow";
+        letter-spacing: 2px;
+        color: #565656;
+        font-size: 40px;
+    }
+
+    .stortBilde {
+        width: 100%;
+        height: 300px;
+        background-color: #cacaca;
+    }
+
+    .description {
+        width: 70%;
+        font-family: "Arial Narrow";
+        letter-spacing: 2px;
+        line-height: 1.5;
+        font-size: 22px;
+        color: #565656;
+        text-align: center;
+    }
+
+    .innpakningTreDeler {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 350px;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 20px;
+    }
+
+    .why {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        height: 100%;
+        font-family: "Arial Narrow";
+        letter-spacing: 2px;
+        line-height: 1.5;
+        font-size: 17px;
+        color: #565656;
+    }
+
+    .liteBilde {
+        width: 300px;
+        height: 100%;
+        background-color: #cacaca;
+    }
+
+    #produkt2 {
+        margin-bottom: 50px;
+    }
+
+    .strek {
+        height: 3px;
+        background-color: #2BA337;
+        position: absolute;
+        margin-top: -930px;
+    }
+
+    #strek1 {
+        width: 110px;
+    }
+
+    #strek2 {
+        width: 150px;
+    }
+
+    #innpakningNederst {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 300px;
+        height: 100px;
+        font-family: "Arial Narrow";
+        color: #565656;
+        letter-spacing: 2px;
+        line-height: 1.5;
+        margin-top: 2570px;
+        z-index: 5;
+    }
+
+    #strekNederst {
+        width: 2px;
+        height: 60px;
+        background-color: #2BA337;
+    }
+
+
+
+</style>
+
+<body>
+
+<div id="innpakning">
+
+    <div id="innpakningMeny">
+        <span><a href="index.html" id="hovedlogo" class="logo">enviro</a></span>
+        <div id="innpakningSider">
+            <span><a href="company.html" class="menysider" id="company">Company</a></span>
+            <span><a href="products.html" class="menysider" id="products">Products</a></span>
+            <span><a href="team.html" class="menysider" id="ourTeam">Our team</a></span>
+        </div>
+
+        <a href="#" id="knappKontakt">Contact</a>
+    </div>
+
+    <div id="main">
+        <div class="innpakningProdukt" id="produkt1">
+            <h1 class="overskrift">ViroBin</h1>
+            <div class="strek" id="strek1"></div>
+            <div class="stortBilde"></div>
+            <p class="description">
+                ViroBin is a trash can designed to draw attention and encourage
+                people to throw their trash. The ViroBin will provide a message
+                over the garbage chute on a horizontal LED-screen. The screen
+                displaying the message in form of a fortune or joke will be powered
+                by the solar panel. We hope that this type of reward will make
+                people feel like they get something back for their effort.
+            </p>
+            <div class="innpakningTreDeler">
+                <div class="why">
+                    <h2 class="underoverskrift">Why we made it</h2>
+                    <p class="info">
+                        Every day, an estimate of two tons of litter is being thrown on
+                        the streets in Oslo (Rusken / Oslo kommune). There is a lack of
+                        the right attitude towards trash in the city, which results in
+                        littering at such extent. We have made the ViroBin with a goal
+                        of making people want to throw their trash because of the many
+                        features it provides.
+                    </p>
+                </div>
+                <div class="liteBilde"></div>
+                <div class="liteBilde"></div>
+            </div>
+        </div>
+
+
+        <div class="innpakningProdukt" id="produkt2">
+            <h1 class="overskrift">Product 2</h1>
+            <div class="strek" id="strek2"></div>
+            <div class="stortBilde"></div>
+            <p class="description">
+                Viro is an app with a goal of spreading awareness about climate
+                issues and helping people develop habits that have a positive
+                impact on the climate. The users get challenges to complete
+                that encourage to make sustainable choices. For every completed
+                challenge, the users gain points. These points can
+                be traded for discounts and gifts from our partners.
+            </p>
+            <div class="innpakningTreDeler">
+                <div class="why">
+                    <h2 class="underoverskrift">Why we made it</h2>
+                    <p class="info">
+                        Most people care for our planet and want to make environmentally
+                        friendly choices. Sadly, many think that it is too much effort
+                        to not even make a difference, while some don’t even know where
+                        to start. With Viro, we hope that people will be encouraged to
+                        make good choices because they are given specific tasks, and
+                        because of the reward system with our lovely partners.
+                    </p>
+                </div>
+                <div class="liteBilde"></div>
+                <div class="liteBilde"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="innpakningNederst">
+        <div class="info">Osloveien 1 <br> 0101, OSLO</div>
+        <div id="strekNederst"></div>
+        <div class="info">12345678 <br> mail@mail.com</div>
+    </div>
+
+</div>
+
+</body>
+</html>

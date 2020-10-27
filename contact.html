@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+</head>
+
+<style>
+
+    body {
+        margin: 0;
+    }
+
+    #innpakning {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 1000px;
+        background-color: #f1f1f1;
+    }
+
+    #main {
+        position: absolute;
+        width: 100%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 130px;
+        background-color: white;
+        box-shadow: 0px 3px 18px rgba(140, 135, 135, 0.7);
+        align-items: center;
+        justify-content: center;
+    }
+
+    #innpakningMeny {
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        width: 100%;
+        height: 70px;
+        background-color: white;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0px 3px 20px rgba(140, 135, 135, 0.7);
+        z-index: 3;
+    }
+
+    #hovedlogo {
+        font-family: "Baloo Bhaina";
+        color: #2BA337;
+        font-size: 43px;
+        letter-spacing: 2px;
+        margin-left: 30px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    #innpakningSider {
+        display: flex;
+        flex-direction: row;
+        width: 450px;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 200px;
+    }
+
+    .menysider {
+        color: #565656;
+        font-family: "Arial Narrow";
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+
+    .menysider:hover {
+        color: #2BA337;
+    }
+
+    h1 {
+        font-family: "Arial Narrow";
+        color: #565656;
+        letter-spacing: 2px;
+        font-size: 30px;
+    }
+
+    #popupVindu {
+        display: flex;
+        width: 700px;
+        height: 600px;
+        background-color: white;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #kontaktInfo {
+        display: flex;
+        flex-direction: column;
+        height: 70%;
+        width: 23%;
+        justify-content: space-evenly;
+        margin-top: -30px;
+    }
+
+    .info {
+        font-family: "Arial Narrow";
+        color: #565656;
+        letter-spacing: 2px;
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .spanKontaktInfo {
+        margin-top: -15px;
+    }
+
+    #strekKontakt {
+        height: 40%;
+        width: 2px;
+        background-color: #2BA337;
+    }
+
+    #form {
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+        height: 90%;
+        align-items: center;
+        justify-content: center;
+        margin-left: 20px;
+    }
+
+    #formHorisontal {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 30px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #formVertical {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 340px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .knapp {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family: "Arial Narrow";
+        font-size: 23px;
+        letter-spacing: 2px;
+        height: 35px;
+        width: 220px;
+        background-color: #2BA337;
+        border: solid 4px #258c30;
+        border-radius: 10px;
+    }
+
+    input {
+        font-family: "Arial Narrow";
+        color: #565656;
+        font-size: 18px;
+        letter-spacing: 2px;
+        width: 200px;
+        height: 30px;
+        border: solid 1px #c8c8c8;
+        border-radius: 5px;
+    }
+
+    .threeInput {
+        width: 420px;
+    }
+
+    #inputMessage {
+        height: 120px;
+    }
+
+    #submit {
+        width: 100px;
+        height: 35px;
+        margin-top: 420px;
+    }
+
+    #submit:hover {
+        border-width: 6px;
+    }
+
+    #knappKontakt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 35px;
+        position: absolute;
+        border: solid #2BA337 5px;
+        border-radius: 10px;
+        background-color: white;
+        right: 40px;
+        color: #2BA337;
+        font-family: "Arial Narrow";
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+
+    #innpakningNederst {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 300px;
+        height: 100px;
+        font-family: "Arial Narrow";
+        color: #565656;
+        letter-spacing: 2px;
+        line-height: 1.5;
+        margin-top: 870px;
+        z-index: 5;
+    }
+
+    #strekNederst {
+        width: 2px;
+        height: 60px;
+        background-color: #2BA337;
+    }
+
+
+</style>
+
+<body>
+
+<div id="innpakning">
+
+    <div id="innpakningMeny">
+        <span><a href="index.html" id="hovedlogo" class="logo">enviro</a></span>
+        <div id="innpakningSider">
+            <span><a href="company.html" class="menysider" id="company">Company</a></span>
+            <span><a href="products.html" class="menysider" id="products">Products</a></span>
+            <span><a href="team.html" class="menysider" id="ourTeam">Our team</a></span>
+        </div>
+
+        <a href="#" id="knappKontakt">Contact</a>
+    </div>
+
+    <div id="main">
+        <h1>Happy to hear from you</h1>
+        <div id="popupVindu">
+            <div id="kontaktInfo">
+                <div class="info">
+                    <h4>Email:</h4>
+                    <span class="spanKontaktInfo">mail@mail.com</span>
+                </div>
+                <div class="info">
+                    <h4>Address:</h4>
+                    <span class="spanKontaktInfo">Osloveien 1, <br> 0101 OSLO</span>
+                </div>
+                <div class="info">
+                    <h4>Phone:</h4>
+                    <span class="spanKontaktInfo">12345678</span>
+                </div>
+                <div class="info">
+                    <h4>Opening hours:</h4>
+                    <span class="spanKontaktInfo">
+                        Mon - fri <br>
+                        09:00 - 14:00
+                    </span>
+                </div>
+            </div>
+            <div id="strekKontakt"></div>
+            <div id="form">
+                <form id="formHorisontal" action="">
+                    <input type="text" placeholder="First name">
+                    <input type="text" placeholder="Last name">
+                </form>
+                <form id="formVertical" action="">
+                    <input type="text" class="threeInput" placeholder="Mail">
+                    <input type="text" class="threeInput" placeholder="Subject">
+                    <input type="text" class="threeInput" id="inputMessage" placeholder="Message">
+                </form>
+                <a href="" class="knapp" id="submit">Submit</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="innpakningNederst">
+        <div class="infoNederst">Osloveien 1 <br> 0101, OSLO</div>
+        <div id="strekNederst"></div>
+        <div class="infoNederst">12345678 <br> mail@mail.com</div>
+    </div>
+
+</div>
+
+</body>
+</html>

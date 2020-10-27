@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our team</title>
+</head>
+
+<style>
+
+    body {
+        margin: 0;
+    }
+
+    #innpakning {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 1900px;
+        background-color: #f1f1f1;
+    }
+
+    #main {
+        position: absolute;
+        width: 100%;
+        height: 1600px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 130px;
+        background-color: white;
+        box-shadow: 0px 3px 18px rgba(140, 135, 135, 0.7);
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #innpakningMeny {
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        width: 100%;
+        height: 70px;
+        background-color: white;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0px 3px 20px rgba(140, 135, 135, 0.7);
+        z-index: 3;
+    }
+
+    #hovedlogo {
+        font-family: "Baloo Bhaina";
+        color: #2BA337;
+        font-size: 43px;
+        letter-spacing: 2px;
+        margin-left: 30px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    #innpakningSider {
+        display: flex;
+        flex-direction: row;
+        width: 450px;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 200px;
+    }
+
+    .menysider {
+        color: #565656;
+        font-family: "Arial Narrow";
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+
+    .menysider:hover {
+        color: #2BA337;
+    }
+
+    #ourTeam {
+        color: #2BA337;
+    }
+
+    #knappKontakt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 35px;
+        position: absolute;
+        border: solid #2BA337 3px;
+        border-radius: 10px;
+        background-color: white;
+        right: 40px;
+        color: #2BA337;
+        font-family: "Arial Narrow";
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+
+    #knappKontakt:hover {
+        border-width: 5px;
+    }
+
+    #bilde {
+        width: 100%;
+        height: 600px;
+        background-color: #cacaca;
+    }
+
+    #innpakningTeam {
+        width: 95%;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 100px;
+    }
+
+    .teamDel {
+        display: flex;
+        width: 100%;
+        height: 40%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+
+    .medlemBoks {
+        width: 565px;
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .medlemBilde {
+        height: 100%;
+        width: 35%;
+        background-color: #cacaca;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        height: 100%;
+        justify-content: space-between;
+        margin-right: 5px;
+    }
+
+    .navn {
+        font-family: "Arial Narrow";
+        color: #565656;
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+
+    .rolle {
+        font-family: "Arial Narrow";
+        color: #565656;
+        font-size: 20px;
+        margin-top: -40px;
+        letter-spacing: 2px;
+    }
+
+    .kortIntro {
+        font-family: "Arial Narrow";
+        color: #565656;
+        font-size: 20px;
+        letter-spacing: 2px;
+        line-height: 1.5;
+    }
+
+    .innpakningKnapp {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 40px;
+        margin-bottom: 5px;
+    }
+
+    .knapp {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family: "Arial Narrow";
+        font-size: 17px;
+        letter-spacing: 2px;
+        height: 28px;
+        width: 140px;
+        background-color: #2BA337;
+        border: solid 4px #258c30;
+        border-radius: 10px;
+    }
+
+    .knapp:hover {
+        border-width: 6px;
+    }
+
+    .resume {
+        width: 120px;
+        margin-left: -190px;
+    }
+
+    .manifesto {
+        margin-right: -140px;
+    }
+
+    #innpakningNederst {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 300px;
+        height: 100px;
+        font-family: "Arial Narrow";
+        color: #565656;
+        letter-spacing: 2px;
+        line-height: 1.5;
+        margin-top: 1770px;
+        z-index: 5;
+    }
+
+    #strekNederst {
+        width: 2px;
+        height: 60px;
+        background-color: #2BA337;
+    }
+
+
+</style>
+
+<body>
+
+<div id="innpakning">
+
+    <div id="innpakningMeny">
+        <span><a href="index.html" id="hovedlogo" class="logo">enviro</a></span>
+        <div id="innpakningSider">
+            <span><a href="company.html" class="menysider" id="company">Company</a></span>
+            <span><a href="products.html" class="menysider" id="products">Products</a></span>
+            <span><a href="team.html" class="menysider" id="ourTeam">Our team</a></span>
+        </div>
+
+        <a href="#" id="knappKontakt">Contact</a>
+    </div>
+
+    <div id="main">
+        <div id="bilde"></div>
+
+        <div id="innpakningTeam">
+            <div class="teamDel">
+                <div class="medlemBoks">
+                    <div class="medlemBilde"></div>
+                    <div class="info">
+                        <h2 class="navn">William Sander Tyssøy</h2>
+                        <span class="rolle"><em>CEO</em></span>
+                        <p class="kortIntro">
+                            Work experience desc. "Sed ut perspiciatis unde omnis
+                            iste natus error sit dfbds[fb dfk blablalb bla
+                        </p>
+                        <div class="innpakningKnapp">
+                            <a href="" class="knapp resume">See resume</a>
+                            <a href="" class="knapp manifesto">See manifesto</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="medlemBoks">
+                    <div class="medlemBilde"></div>
+                    <div class="info">
+                        <h2 class="navn">Jenny Louise Berggreen</h2>
+                        <span class="rolle"><em>Graphic designer</em></span>
+                        <p class="kortIntro">
+                            Work experience desc. "Sed ut perspiciatis unde omnis
+                            iste natus error sit dfbds[fb dfk blablalb bla
+                        </p>
+                        <div class="innpakningKnapp">
+                            <a href="jennyR.html" class="knapp resume">See resume</a>
+                            <a href="jennyM.html" class="knapp manifesto">See manifesto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="teamDel">
+                <div class="medlemBoks">
+                    <div class="medlemBilde"></div>
+                    <div class="info">
+                        <h2 class="navn">Linn Sørlie</h2>
+                        <span class="rolle"><em>Marketing director</em></span>
+                        <p class="kortIntro">
+                            Work experience desc. "Sed ut perspiciatis unde omnis
+                            iste natus error sit dfbds[fb dfk blablalb bla
+                        </p>
+                        <div class="innpakningKnapp">
+                            <a href="" class="knapp resume">See resume</a>
+                            <a href="" class="knapp manifesto">See manifesto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="medlemBoks">
+                    <div class="medlemBilde"></div>
+                    <div class="info">
+                        <h2 class="navn">Vilde Hansen</h2>
+                        <span class="rolle"><em>Finance manager</em></span>
+                        <p class="kortIntro">
+                            Work experience desc. "Sed ut perspiciatis unde omnis
+                            iste natus error sit dfbds[fb dfk blablalb bla
+                        </p>
+                        <div class="innpakningKnapp">
+                            <a href="" class="knapp resume">See resume</a>
+                            <a href="" class="knapp manifesto">See manifesto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="innpakningNederst">
+        <div class="infoNederst">Osloveien 1 <br> 0101, OSLO</div>
+        <div id="strekNederst"></div>
+        <div class="infoNederst">12345678 <br> mail@mail.com</div>
+    </div>
+
+
+</div>
+
+</body>
+</html>

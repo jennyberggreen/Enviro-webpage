@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Company</title>
+</head>
+
+<style>
+
+    body {
+        margin: 0;
+    }
+
+    #innpakning {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 2600px;
+        background-color: #f1f1f1;
+    }
+
+    #main {
+        position: absolute;
+        width: 100%;
+        height: 2300px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 130px;
+        background-color: white;
+        box-shadow: 0px 3px 18px rgba(140, 135, 135, 0.7);
+        align-items: center;
+    }
+
+    #innpakningMeny {
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        width: 100%;
+        height: 70px;
+        background-color: white;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0px 3px 20px rgba(140, 135, 135, 0.7);
+        z-index: 3;
+    }
+
+    #hovedlogo {
+        font-family: "Baloo Bhaina";
+        color: #2BA337;
+        font-size: 43px;
+        letter-spacing: 2px;
+        margin-left: 30px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    #innpakningSider {
+        display: flex;
+        flex-direction: row;
+        width: 450px;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 200px;
+    }
+
+    .menysider {
+        color: #565656;
+        font-family: "Arial Narrow";
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+
+    .menysider:hover {
+        color: #2BA337;
+    }
+
+    #company {
+        color: #2BA337;
+    }
+
+    #knappKontakt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 35px;
+        position: absolute;
+        border: solid #2BA337 3px;
+        border-radius: 10px;
+        background-color: white;
+        right: 40px;
+        color: #2BA337;
+        font-family: "Arial Narrow";
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+
+    #knappKontakt:hover {
+        border-width: 5px;
+    }
+
+    #innpakningOverskrift {
+        display: flex;
+        align-items: center;
+        width: 65%;
+        height: 100px;
+        margin: 10px;
+    }
+
+    .overskrift {
+        font-weight: bold;
+        font-family: "Arial Narrow";
+        letter-spacing: 2px;
+        color: #565656;
+        font-size: 30px;
+    }
+
+    #aboutEnviro {
+        font-weight: bold;
+        font-size: 40px;
+    }
+
+    #innpakningBilde {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 500px;
+        background-image: url("holderHenderGress.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    #dark-bg {
+        position: absolute;
+        width: 100%;
+        height: 500px;
+        background-color: rgba(0,0,0,0.5);
+        margin-top: 120px;
+    }
+
+    .tekst {
+        font-family: "Arial Narrow";
+        letter-spacing: 2px;
+        line-height: 1.5;
+        font-size: 25px;
+        color: #565656;
+    }
+
+    #innledning {
+        color: white;
+        z-index: 2;
+        width: 70%;
+        font-size: 30px;
+    }
+
+    #innpakningOmEnviro {
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+        height: 350px;
+        justify-content: space-evenly;
+        margin-top: 50px;
+    }
+
+    #innpakningProblemer {
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+        height: 1200px;
+        justify-content: space-evenly;
+        margin-top: 40px;
+    }
+
+    .underoverskrift {
+        font-family: "Arial Narrow";
+        letter-spacing: 2px;
+        font-size: 25px;
+        color: #565656;
+        font-weight: normal;
+    }
+
+    #strek1 {
+        width: 90px;
+        height: 3px;
+        background-color: #2BA337;
+        position: absolute;
+        margin-top: -20px;
+    }
+
+    #strek2 {
+        width: 95px;
+        height: 3px;
+        background-color: #2BA337;
+        position: absolute;
+        margin-top: -20px;
+    }
+
+    #strek3 {
+        width: 190px;
+        height: 3px;
+        background-color: #2BA337;
+        position: absolute;
+        margin-top: -20px;
+    }
+
+    #innpakningNederst {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 300px;
+        height: 100px;
+        font-family: "Arial Narrow";
+        color: #565656;
+        letter-spacing: 2px;
+        line-height: 1.5;
+        margin-top: 2470px;
+        z-index: 5;
+    }
+
+    #strekNederst {
+        width: 2px;
+        height: 60px;
+        background-color: #2BA337;
+    }
+
+
+
+</style>
+
+<body>
+
+<div id="innpakning">
+
+    <div id="innpakningMeny">
+        <span><a href="index.html" id="hovedlogo" class="logo">enviro</a></span>
+        <div id="innpakningSider">
+            <span><a href="company.html" class="menysider" id="company">Company</a></span>
+            <span><a href="products.html" class="menysider" id="products">Products</a></span>
+            <span><a href="team.html" class="menysider" id="ourTeam">Our team</a></span>
+        </div>
+
+        <a href="#" id="knappKontakt">Contact</a>
+    </div>
+
+    <div id="main">
+        <div id="innpakningOverskrift">
+            <h1 class="overskrift" id="aboutEnviro">About enviro</h1>
+        </div>
+
+        <div id="innpakningBilde">
+            <p class="tekst" id="innledning">
+                Enviro is a company with the intent of developing
+                technologies for a greener future. We are continuously
+                working on improving existing measures and create new
+                solutions to counter some of the biggest environmental
+                challenges that our planet is facing today.
+            </p>
+        </div>
+        <div id="dark-bg"></div>
+
+        <div id="innpakningOmEnviro">
+            <h2 class="overskrift">What is enviro?</h2>
+            <p class="tekst">
+                Enviro is a company established in Oslo, founded in the
+                beginning of 2020. We are four norwegians who found each other
+                through our common love for nature and a goal of making sure there
+                is a future on our beautiful planet. Enviro began as an idea set
+                in motion by the current climate changes, but has since evolved
+                into a full grown company. Today, we work as a team with the
+                mission of creating fun and technological innovations to make a difference
+                in some of the environmental challenges the planet is facing.
+            </p>
+        </div>
+
+
+        <div id="innpakningProblemer">
+            <h2 class="overskrift">Problems we wish to tackle</h2>
+            <div class="problemer">
+                <h3 class="underoverskrift">Littering</h3>
+                <div id="strek1"></div>
+                <p class="tekst">
+                    Litter is bad for every living thing on this planet.
+                    It is estimated that each year, between eight and twelve
+                    million tons of garbage end up in the ocean on a world basis.
+                    Materials such as plastic are especially a problem due to their
+                    long degradation time. Most sink toward the seabed and remain lying there.
+                    Plastic waste is dangerous for both humans and animals by for example
+                    threatening clean water in some places in the world as well as
+                    the digestive system of marine animals.
+
+                </p>
+            </div>
+
+            <div class="problemer">
+                <h3 class="underoverskrift">Pollution</h3>
+                <div id="strek2"></div>
+                <p class="tekst">
+                    Both air and water pollution have an impact on all life on the planet.
+                    In 2019, the airborne dust in the Oslo area was 6,7 microgram per cubic
+                    meter with air. Exposure to the airborne dust is one of the most important
+                    environmental causes of premature deaths (FHI, 2017).
+                    Airborne dust are particles that can vary in both size and composition and
+                    the most important causes is road traffic, wood burning and long distance transported pollution
+                    (FHI, 2017).
+
+                </p>
+            </div>
+
+            <div class="problemer">
+                <h3 class="underoverskrift">Animal protection</h3>
+                <div id="strek3"></div>
+                <p class="tekst">
+                    The earth is under a lot of pressure. By changing the environment
+                    we also change the habitat of most species and some of them have
+                    problems surviving in the new conditions. Each year we lose 2 % of
+                    the earth's population. On a global basis it is documented an intake
+                    of plastic within 331 different species (NIVA, 2018).
+
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="innpakningNederst">
+        <div class="info">Osloveien 1 <br> 0101, OSLO</div>
+        <div id="strekNederst"></div>
+        <div class="info">12345678 <br> mail@mail.com</div>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enviro</title>
+</head>
+
+<style>
+
+    body {
+        margin: 0;
+    }
+
+    #innpakning {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 3000px;
+        background-color: #f1f1f1;
+    }
+
+    #main {
+        position: absolute;
+        width: 100%;
+        height: 2700px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 130px;
+        background-color: white;
+        box-shadow: 0px 3px 18px rgba(140, 135, 135, 0.7);
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #innpakningMeny {
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        width: 100%;
+        height: 70px;
+        background-color: white;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0px 3px 20px rgba(140, 135, 135, 0.7);
+        z-index: 3;
+    }
+
+    .logo {
+        font-family: "Baloo Bhaina";
+        color: #2BA337;
+        letter-spacing: 2px;
+    }
+
+    #hovedlogo {
+        font-size: 43px;
+        margin-left: 30px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    #innpakningSider {
+        display: flex;
+        flex-direction: row;
+        width: 450px;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 200px;
+    }
+
+    .menysider {
+        color: #565656;
+        font-family: "Arial Narrow";
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+
+    .menysider:hover {
+        color: #2BA337;
+    }
+
+    #knappKontakt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 35px;
+        position: absolute;
+        border: solid #2BA337 3px;
+        border-radius: 10px;
+        background-color: white;
+        right: 40px;
+        color: #2BA337;
+        font-family: "Arial Narrow";
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+
+    #knappKontakt:hover {
+        border-width: 5px;
+    }
+
+
+    #innpakningEnviro {
+        width: 60%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #bildeLogo {
+        margin-top: 10px;
+        width: 300px;
+        height: 300px;
+    }
+
+    #logoLiten {
+        font-size: 50px;
+        margin-top: -58px;
+        animation-name: animasjon_logo;
+        animation-duration: 5s;
+    }
+
+    @keyframes animasjon_logo {
+        from {color: #2BA337;}
+        to {color: yellow;}
+        from {color: yellow;}
+        to {color: #2BA337;}
+    }
+
+    #statement {
+        color: #565656;
+        font-family: "Arial Narrow";
+        font-size: 35px;
+        letter-spacing: 2px;
+        line-height: 1.5;
+    }
+
+    .knapp {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family: "Arial Narrow";
+        font-size: 23px;
+        letter-spacing: 2px;
+        height: 35px;
+        width: 220px;
+        background-color: #2BA337;
+        border: solid 4px #258c30;
+        border-radius: 10px;
+    }
+
+    .knapp:hover {
+        border-width: 6px;
+    }
+
+    #knappMoreEnviro {
+        margin-top: 700px;
+    }
+
+    #innpakningBilder {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 422px;
+        margin-top: 100px;
+    }
+
+    .treBilder {
+        width: 33.33%;
+    }
+
+    #innpakningProdukt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 500px;
+    }
+
+    .overskrift {
+        font-weight: normal;
+        font-family: "Arial Narrow";
+        letter-spacing: 2px;
+        color: #565656;
+        font-size: 40px;
+    }
+
+    #innpakningProduktbilde {
+        display: flex;
+        width: 60%;
+        height: 340px;
+        background-color: #cacaca;
+    }
+
+    #knappProducts {
+        width: 270px;
+        margin-top: 670px;
+    }
+
+    #innpakningTeam {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 580px;
+        margin-top: 100px;
+    }
+
+    #strekTeam {
+        position: absolute;
+        background-color: #2BA337;
+        width: 280px;
+        height: 2px;
+        margin-top: -360px;
+    }
+
+    #innpakningMedlembokser {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 75%;
+        height: 400px;
+        flex-wrap: wrap;
+    }
+
+    .medlemBoks {
+        width: 400px;
+        height: 150px;
+        margin: 30px 50px;
+        border: solid 3px #2BA337;
+        border-radius: 10px;
+    }
+
+    #innpakningKontakt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 140px;
+    }
+
+    #getInTouch {
+        font-size: 23px;
+        margin-top: 15px;
+    }
+
+    #knappGetInTouch {
+        width: 120px;
+        height: 28px;
+        margin-top: 70px;
+    }
+
+    #innpakningNederst {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 300px;
+        height: 100px;
+        font-family: "Arial Narrow";
+        color: #565656;
+        letter-spacing: 2px;
+        line-height: 1.5;
+        margin-top: 2870px;
+        z-index: 5;
+    }
+
+    #strekNederst {
+        width: 2px;
+        height: 60px;
+        background-color: #2BA337;
+    }
+
+
+
+    /* pop-up vindu */
+
+    #darkBG {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.71);
+        top: 0;
+        z-index: 4;
+    }
+
+    #popupVindu {
+        position: relative;
+        display: flex;
+        width: 700px;
+        height: 600px;
+        background-color: white;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #kontaktInfo {
+        display: flex;
+        flex-direction: column;
+        height: 70%;
+        width: 29%;
+        background-color: antiquewhite;
+    }
+
+    #strekKontakt {
+        height: 40%;
+        width: 2px;
+        background-color: #2BA337;
+    }
+
+    #form {
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+        height: 90%;
+        background-color: antiquewhite;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #formHorisontal {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 30px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #formVertical {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 300px;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #f1f1f1;
+    }
+
+    #lukk {
+        position: absolute;
+        top: 0;
+        font-family: "Arial Rounded MT Bold";
+        color: #2BA337;
+        font-size: 55px;
+        right: 14px;
+        transform: rotate(45deg);
+        cursor: pointer;
+    }
+
+</style>
+
+<script>
+    // code from RichardCodes on youtube: https://youtu.be/gLWIYk0Sd38
+    document.getElementById('knappKontakt').addEventListener("click",
+        function() {
+        document.querySelector('#darkBG').style.display = "flex";
+    });
+
+    document.querySelector('#lukk').addEventListener("click",
+    function() {
+        document.querySelector('#darkBG').style.display = "none";
+    });
+
+</script>
+
+<body>
+
+<div id="innpakning">
+
+    <div id="innpakningMeny">
+    <span><a href="index.html" class="logo" id="hovedlogo">enviro</a></span>
+    <div id="innpakningSider">
+        <span><a href="company.html" class="menysider" id="company">Company</a></span>
+        <span><a href="products.html" class="menysider" id="products">Products</a></span>
+        <span><a href="team.html" class="menysider" id="ourTeam">Our team</a></span>
+    </div>
+
+    <a href="contact.html" id="knappKontakt">Contact</a>
+
+    </div>
+
+    <div id="main">
+        <div id="innpakningEnviro">
+            <img id="bildeLogo" src="enviroLogo%20–%20Kopi.PNG">
+            <div class="logo" id="logoLiten">enviro</div>
+            <p id="statement">
+                “Enviro seeks to uphold a sustainable life
+                by adding joy and excitement to our common
+                mission which is to take care for our globe.”
+            </p>
+            <a href="company.html" class="knapp" id="knappMoreEnviro">More about enviro</a>
+        </div>
+
+        <div id="innpakningBilder">
+            <img class="treBilder" src="bekk.jpg">
+            <img class="treBilder" src="fjell.jpg">
+            <img class="treBilder" src="spire.png">
+        </div>
+
+        <div id="innpakningProdukt">
+            <h2 class="overskrift">Our first product is the <b>ViroBin</b></h2>
+            <div id="innpakningProduktbilde"></div>
+            <a href="products.html" class="knapp" id="knappProducts">More about our products</a>
+        </div>
+
+        <div id="innpakningTeam">
+            <h2 class="overskrift">Meet the people</h2>
+            <div id="strekTeam"></div>
+            <div id="innpakningMedlembokser">
+                <div class="medlemBoks">
+                    <div class="medlemBilde"></div>
+                </div>
+                <div class="medlemBoks"></div>
+                <div class="medlemBoks"></div>
+                <div class="medlemBoks"></div>
+            </div>
+        </div>
+
+        <div id="innpakningKontakt">
+            <h3 class="overskrift" id="getInTouch">Want to get in touch?</h3>
+            <a href="contact.html" class="knapp" id="knappGetInTouch">Contact</a>
+        </div>
+
+    </div>
+
+    <div id="innpakningNederst">
+        <div class="info">Osloveien 1 <br> 0101, OSLO</div>
+        <div id="strekNederst"></div>
+        <div class="info">12345678 <br> mail@mail.com</div>
+    </div>
+
+    <!-- pop-up vindu -->
+
+    <!--<div id="darkBG">
+        <div id="popupVindu">
+            <div id="lukk">+</div>
+            <div id="kontaktInfo"></div>
+            <div id="strekKontakt"></div>
+            <div id="form">
+                    <form id="formHorisontal" action="">
+                        <input type="text" placeholder="First name">
+                        <input type="text" placeholder="Last name">
+                    </form>
+                    <form id="formVertical" action="">
+                        <input type="text" placeholder="mail">
+                        <input type="text" placeholder="subject">
+                        <input type="text" placeholder="message">
+                    </form>
+                <a href="" class="knapp" id="submit">Submit</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div> -->
+
+</body>
+</html>

@@ -125,7 +125,7 @@
         font-size: 50px;
         margin-top: -58px;
         animation-name: animasjon_logo;
-        animation-duration: 5s;
+        animation-duration: 7s;
     }
 
     @keyframes animasjon_logo {
@@ -138,7 +138,7 @@
     #statement {
         color: #565656;
         font-family: "Arial Narrow";
-        font-size: 35px;
+        font-size: 37px;
         letter-spacing: 2px;
         line-height: 1.5;
     }
@@ -242,6 +242,38 @@
         margin: 30px 50px;
         border: solid 3px #2BA337;
         border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .medlemBilde {
+        width: 30%;
+        height: 101%;
+        background-color: #cacaca;
+        border-radius: 7px;
+    }
+
+    .navnRolle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        font-family: "Arial Narrow";
+        color: #565656;
+        letter-spacing: 2px;
+        width: 70%;
+        height: 50%;
+        font-size: 20px;
+    }
+
+    .navn {
+        font-size: 23px;
+        margin-top: 0;
+    }
+
+    .rolle {
     }
 
     #innpakningKontakt {
@@ -284,100 +316,9 @@
         background-color: #2BA337;
     }
 
-
-
-    /* pop-up vindu */
-
-    #darkBG {
-        display: none;
-        align-items: center;
-        justify-content: center;
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0,0,0,0.71);
-        top: 0;
-        z-index: 4;
-    }
-
-    #popupVindu {
-        position: relative;
-        display: flex;
-        width: 700px;
-        height: 600px;
-        background-color: white;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-    #kontaktInfo {
-        display: flex;
-        flex-direction: column;
-        height: 70%;
-        width: 29%;
-        background-color: antiquewhite;
-    }
-
-    #strekKontakt {
-        height: 40%;
-        width: 2px;
-        background-color: #2BA337;
-    }
-
-    #form {
-        display: flex;
-        flex-direction: column;
-        width: 65%;
-        height: 90%;
-        background-color: antiquewhite;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #formHorisontal {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        height: 30px;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-    #formVertical {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 300px;
-        align-items: center;
-        justify-content: space-evenly;
-        background-color: #f1f1f1;
-    }
-
-    #lukk {
-        position: absolute;
-        top: 0;
-        font-family: "Arial Rounded MT Bold";
-        color: #2BA337;
-        font-size: 55px;
-        right: 14px;
-        transform: rotate(45deg);
-        cursor: pointer;
-    }
-
 </style>
 
 <script>
-    // code from RichardCodes on youtube: https://youtu.be/gLWIYk0Sd38
-    document.getElementById('knappKontakt').addEventListener("click",
-        function() {
-        document.querySelector('#darkBG').style.display = "flex";
-    });
-
-    document.querySelector('#lukk').addEventListener("click",
-    function() {
-        document.querySelector('#darkBG').style.display = "none";
-    });
 
 </script>
 
@@ -404,7 +345,7 @@
             <p id="statement">
                 “Enviro seeks to uphold a sustainable life
                 by adding joy and excitement to our common
-                mission which is to take care for our globe.”
+                mission which is to take care for our globe”
             </p>
             <a href="company.html" class="knapp" id="knappMoreEnviro">More about enviro</a>
         </div>
@@ -427,10 +368,32 @@
             <div id="innpakningMedlembokser">
                 <div class="medlemBoks">
                     <div class="medlemBilde"></div>
+                    <div class="navnRolle">
+                        <h4 class="navn">William Sander Tyssøy</h4>
+                        <span class="rolle"><em>CEO</em></span>
+                    </div>
                 </div>
-                <div class="medlemBoks"></div>
-                <div class="medlemBoks"></div>
-                <div class="medlemBoks"></div>
+                <div class="medlemBoks">
+                    <div class="medlemBilde"></div>
+                    <div class="navnRolle">
+                        <h4 class="navn">Jenny Louise Berggreen</h4>
+                        <span class="rolle"><em>Graphic designer</em></span>
+                    </div>
+                </div>
+                <div class="medlemBoks">
+                    <div class="medlemBilde"></div>
+                    <div class="navnRolle">
+                        <h4 class="navn">Linn Sørlie</h4>
+                        <span class="rolle"><em>Marketing director</em></span>
+                    </div>
+                </div>
+                <div class="medlemBoks">
+                    <div class="medlemBilde"></div>
+                    <div class="navnRolle">
+                        <h4 class="navn">Vilde Hansen</h4>
+                        <span class="rolle">Finance manager</span>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -447,30 +410,7 @@
         <div class="info">12345678 <br> mail@mail.com</div>
     </div>
 
-    <!-- pop-up vindu -->
 
-    <!--<div id="darkBG">
-        <div id="popupVindu">
-            <div id="lukk">+</div>
-            <div id="kontaktInfo"></div>
-            <div id="strekKontakt"></div>
-            <div id="form">
-                    <form id="formHorisontal" action="">
-                        <input type="text" placeholder="First name">
-                        <input type="text" placeholder="Last name">
-                    </form>
-                    <form id="formVertical" action="">
-                        <input type="text" placeholder="mail">
-                        <input type="text" placeholder="subject">
-                        <input type="text" placeholder="message">
-                    </form>
-                <a href="" class="knapp" id="submit">Submit</a>
-                </div>
-
-            </div>
-
-        </div>
-    </div> -->
 
 </body>
 </html>

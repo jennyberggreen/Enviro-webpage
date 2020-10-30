@@ -2,9 +2,189 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Jenny Resume</title>
 </head>
+
+<style>
+
+    body {
+        margin: 0;
+    }
+
+    #innpakning {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 1900px;
+        background-color: #f1f1f1;
+    }
+
+    #main {
+        position: absolute;
+        width: 100%;
+        height: 1600px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 130px;
+        background-color: white;
+        box-shadow: 0px 3px 18px rgba(140, 135, 135, 0.7);
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #innpakningMeny {
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        width: 100%;
+        height: 70px;
+        background-color: white;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0px 3px 20px rgba(140, 135, 135, 0.7);
+        z-index: 3;
+    }
+
+    #hovedlogo {
+        font-family: "Baloo Bhaina";
+        color: #2BA337;
+        font-size: 43px;
+        letter-spacing: 2px;
+        margin-left: 30px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    #innpakningSider {
+        display: flex;
+        flex-direction: row;
+        width: 450px;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 200px;
+    }
+
+    .menysider {
+        color: #565656;
+        font-family: "Arial Narrow";
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+
+    .menysider:hover {
+        color: #2BA337;
+    }
+
+    #products {
+        color: #2BA337;
+    }
+
+    #knappKontakt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 35px;
+        position: absolute;
+        border: solid #2BA337 3px;
+        border-radius: 10px;
+        background-color: white;
+        right: 40px;
+        color: #2BA337;
+        font-family: "Arial Narrow";
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+
+    #knappKontakt:hover {
+        border-width: 5px;
+    }
+
+    #innpakningBack {
+        width: 90%;
+        height: 70px;
+        display: flex;
+        align-items: center;
+    }
+
+    #back {
+        font-family: "Arial Narrow";
+        letter-spacing: 2px;
+        color: #565656;
+        font-size: 20px;
+    }
+
+    #back:hover {
+        color: #2BA337;
+    }
+
+    #innpakningResume {
+        width: 60%;
+        height: 1300px;
+        background-image: url("vildeResumePDF.jpg");
+        background-size: cover;
+        margin-bottom: 200px;
+    }
+
+    #innpakningNederst {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 300px;
+        height: 100px;
+        font-family: "Arial Narrow";
+        color: #565656;
+        letter-spacing: 2px;
+        line-height: 1.5;
+        margin-top: 1770px;
+        z-index: 5;
+    }
+
+    #strekNederst {
+        width: 2px;
+        height: 60px;
+        background-color: #2BA337;
+    }
+
+
+
+</style>
+
 <body>
+
+<div id="innpakning">
+
+    <div id="innpakningMeny">
+        <span><a href="index.html" id="hovedlogo" class="logo">enviro</a></span>
+        <div id="innpakningSider">
+            <span><a href="company.html" class="menysider" id="company">Company</a></span>
+            <span><a href="products.html" class="menysider" id="products">Products</a></span>
+            <span><a href="team.html" class="menysider" id="ourTeam">Our team</a></span>
+        </div>
+
+        <a href="contact.html" id="knappKontakt">Contact</a>
+    </div>
+
+    <div id="main">
+        <div id="innpakningBack">
+            <a id="back" href="team.html">Back</a>
+        </div>
+
+        <div id="innpakningResume"></div>
+    </div>
+
+    <div id="innpakningNederst">
+        <div class="info">Osloveien 1 <br> 0101, OSLO</div>
+        <div id="strekNederst"></div>
+        <div class="info">12345678 <br> mail@mail.com</div>
+    </div>
+
+</div>
 
 </body>
 </html>

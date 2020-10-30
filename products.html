@@ -16,14 +16,14 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
-        height: 2800px;
+        height: 2850px;
         background-color: #f1f1f1;
     }
 
     #main {
         position: absolute;
         width: 100%;
-        height: 2500px;
+        height: 2550px;
         display: flex;
         flex-direction: column;
         margin-top: 130px;
@@ -122,9 +122,17 @@
     }
 
     .stortBilde {
-        width: 100%;
+        width: 120%;
         height: 350px;
-        background-color: #cacaca;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .VBbilder {
+        height: 100%;
+        width: 240px;
     }
 
     .description {
@@ -162,11 +170,42 @@
     .liteBilde {
         width: 300px;
         height: 100%;
-        background-color: #cacaca;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #liteBilde1 {
+        background-image: url("Enviro bilder/VBballotUse.JPG");
+    }
+
+    #liteBilde2 {
+        background-image: url("Enviro bilder/VBhatch.JPG");
     }
 
     #produkt2 {
         margin-bottom: 50px;
+        height: 1200px;
+    }
+
+    #appBilde {
+        height: 400px;
+        width: 110%;
+    }
+
+    .appBilder {
+        height: 100%;
+        width: 210px;
+    }
+
+    #appLiteBilde1 {
+        background-image: url("Enviro bilder/appAddFriends.PNG");
+        background-position: top;
+    }
+
+    #appLiteBilde2 {
+        background-image: url("Enviro bilder/appQuizzInside.PNG");
+        background-position: top;
     }
 
     .strek {
@@ -182,6 +221,7 @@
 
     #strek2 {
         width: 150px;
+        margin-top: -980px;
     }
 
     #innpakningNederst {
@@ -195,7 +235,7 @@
         color: #565656;
         letter-spacing: 2px;
         line-height: 1.5;
-        margin-top: 2670px;
+        margin-top: 2720px;
         z-index: 5;
     }
 
@@ -228,39 +268,52 @@
         <div class="innpakningProdukt" id="produkt1">
             <h1 class="overskrift">ViroBin</h1>
             <div class="strek" id="strek1"></div>
-            <div class="stortBilde"></div>
+            <div class="stortBilde">
+                <img class="VBbilder" src="Enviro%20bilder/VBballotbin.JPG">
+                <img class="VBbilder" src="Enviro%20bilder/VBfotpedal.JPG">
+                <img class="VBbilder" src="Enviro%20bilder/VBfront.JPG">
+                <img class="VBbilder" src="Enviro%20bilder/VBhatchUse.JPG">
+                <img class="VBbilder" src="Enviro%20bilder/VBmessage.JPG">
+            </div>
             <p class="description">
                 ViroBin is a trash can designed to draw attention and encourage
                 people to throw their trash. When someone takes it to use,
                 a message in the form of a fortune or joke will appear on an LED-screen.
-                Every feature on the ViroBin is powered by a solar panel to prevent
-                unnecessary power consumption. We hope that this type of reward will
+                We hope that this type of reward will
                 make people feel like they get something back for their effort.
+                Every feature on the ViroBin is powered by a solar panel to prevent
+                unnecessary power consumption.
             </p>
             <div class="innpakningTreDeler">
                 <div class="why">
                     <h2 class="underoverskrift">Why we made it</h2>
                     <p class="info">
                         Every day, an estimate of two tons of litter is being thrown on
-                        the streets in Oslo (Rusken / Oslo kommune). There is a lack of
+                        the streets in Oslo<!--(Rusken / Oslo kommune)-->. There is a lack of
                         the right attitude towards trash in the city, which results in
                         littering at such extent. We have made the ViroBin with a goal
                         of making people want to throw their trash because of the many
                         features it provides.
                     </p>
                 </div>
-                <div class="liteBilde"></div>
-                <div class="liteBilde"></div>
+                <div class="liteBilde" id="liteBilde1"></div>
+                <div class="liteBilde" id="liteBilde2"></div>
             </div>
         </div>
 
 
         <div class="innpakningProdukt" id="produkt2">
-            <h1 class="overskrift">Product 2</h1>
+            <h1 class="overskrift">Gogreen</h1>
             <div class="strek" id="strek2"></div>
-            <div class="stortBilde"></div>
+            <div id="appBilde" class="stortBilde">
+                <img class="appBilder" src="Enviro%20bilder/appForside.png">
+                <img class="appBilder" src="Enviro%20bilder/appKuponger.png">
+                <img class="appBilder" src="Enviro%20bilder/appProfil.png">
+                <img class="appBilder" src="Enviro%20bilder/appUtfordringer.png">
+                <img class="appBilder" src="Enviro%20bilder/appPall.png">
+            </div>
             <p class="description">
-                Viro is an app with a goal of spreading awareness about climate
+                Gogreen is an app with a goal of spreading awareness about climate
                 issues and helping people develop habits that have a positive
                 impact on the climate. The users get challenges to complete
                 that encourage to make sustainable choices. For every completed
@@ -274,13 +327,13 @@
                         Most people care for our planet and want to make environmentally
                         friendly choices. Sadly, many think that it is too much effort
                         to not even make a difference, while some don’t even know where
-                        to start. With Viro, we hope that people will be encouraged to
+                        to start. With Gogreen, we hope that people will be encouraged to
                         make good choices because they are given specific tasks, and
                         because of the reward system with our lovely partners.
                     </p>
                 </div>
-                <div class="liteBilde"></div>
-                <div class="liteBilde"></div>
+                <div class="liteBilde" id="appLiteBilde1"></div>
+                <div class="liteBilde" id="appLiteBilde2"></div>
             </div>
         </div>
     </div>
